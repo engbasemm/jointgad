@@ -1,0 +1,39 @@
+Reference: RES50_Baseline_no_compression   bootstrap n=1000 block=0   cameras=all   (diff = model - reference)
+
+1) DATASET-LEVEL, paired bootstrap 95% CI
+model                         metric           model     ref     diff     2.5%    97.5%  sig
+Model_A_ChengAtten            mAP             0.2041  0.1997  +0.0045  -0.0210  +0.0315  no
+Model_A_ChengAtten            mIoU_all        0.4967  0.4919  +0.0048  -0.0078  +0.0162  no
+Model_A_ChengAtten            mIoU_no_void    0.4688  0.4632  +0.0056  -0.0079  +0.0179  no
+Model_B_ChengAtten            mAP             0.1959  0.1997  -0.0038  -0.0277  +0.0195  no
+Model_B_ChengAtten            mIoU_all        0.5070  0.4919  +0.0151  +0.0021  +0.0267  yes
+Model_B_ChengAtten            mIoU_no_void    0.4798  0.4632  +0.0165  +0.0024  +0.0291  yes
+Model_C_ChengAtten            mAP             0.2028  0.1997  +0.0031  -0.0216  +0.0265  no
+Model_C_ChengAtten            mIoU_all        0.5065  0.4919  +0.0146  +0.0033  +0.0245  yes
+Model_C_ChengAtten            mIoU_no_void    0.4776  0.4632  +0.0143  +0.0018  +0.0251  yes
+Model_D_ChengAtten            mAP             0.2104  0.1997  +0.0107  -0.0111  +0.0306  no
+Model_D_ChengAtten            mIoU_all        0.5078  0.4919  +0.0159  +0.0050  +0.0273  yes
+Model_D_ChengAtten            mIoU_no_void    0.4802  0.4632  +0.0170  +0.0052  +0.0290  yes
+
+2) PER-IMAGE, paired t-test / Wilcoxon / Cohen's d_z, Holm-corrected across models
+model                         metric               model     ref     diff       t     p(t)  p(Holm)  p(Wilc)    d_z    n
+Model_A_ChengAtten            AP_img              0.2654  0.2661  -0.0007   -0.06   0.9513   1.0000   0.8441  -0.00  205
+Model_B_ChengAtten            AP_img              0.2703  0.2661  +0.0043    0.42   0.6736   1.0000   0.6838   0.03  205
+Model_C_ChengAtten            AP_img              0.2631  0.2661  -0.0030   -0.26   0.7938   1.0000   0.3509  -0.02  205
+Model_D_ChengAtten            AP_img              0.2606  0.2661  -0.0055   -0.41   0.6832   1.0000   0.7665  -0.03  205
+Model_A_ChengAtten            F1_img              0.3304  0.3224  +0.0080    0.67   0.5052   1.0000   0.5260   0.05  205
+Model_B_ChengAtten            F1_img              0.3271  0.3224  +0.0047    0.40   0.6862   1.0000   0.6913   0.03  205
+Model_C_ChengAtten            F1_img              0.3176  0.3224  -0.0048   -0.42   0.6781   1.0000   0.4594  -0.03  205
+Model_D_ChengAtten            F1_img              0.3357  0.3224  +0.0133    1.05   0.2933   1.0000   0.1396   0.07  205
+Model_A_ChengAtten            mIoU_all_img        0.4438  0.4342  +0.0096    1.93   0.0548   0.0753   0.0777   0.13  205
+Model_B_ChengAtten            mIoU_all_img        0.4449  0.4342  +0.0107    2.09   0.0376   0.0753   0.0578   0.15  205
+Model_C_ChengAtten            mIoU_all_img        0.4560  0.4342  +0.0218    4.04   0.0001   0.0002   0.0002   0.28  205
+Model_D_ChengAtten            mIoU_all_img        0.4592  0.4342  +0.0250    4.56   0.0000   0.0000   0.0000   0.32  205
+Model_A_ChengAtten            mIoU_no_void_img    0.3991  0.3894  +0.0097    1.89   0.0608   0.1217   0.0739   0.13  205
+Model_B_ChengAtten            mIoU_no_void_img    0.3992  0.3894  +0.0098    1.85   0.0652   0.1217   0.0782   0.13  205
+Model_C_ChengAtten            mIoU_no_void_img    0.4084  0.3894  +0.0189    3.47   0.0006   0.0019   0.0010   0.24  205
+Model_D_ChengAtten            mIoU_no_void_img    0.4141  0.3894  +0.0246    4.28   0.0000   0.0001   0.0000   0.30  205
+
+Notes: mAP is not an average of per-image values, so its test is the bootstrap in (1);
+per-image AP/F1 are complementary. Frames from the same sequence are correlated; re-run with --block 10.
+=> sweeps/sweep_20261104_111940/stats_FA1_full_sender.csv

@@ -1,0 +1,4 @@
+{
+  "F1_full_as_trained": "WoodScape_ICCV19/output/eval_v4_20261104_100551_percFloat",
+  "F4_full_recal_s0": "WoodScape_ICCV19/output/eval_v4_20261104_101613_percFloat_bnRecal1000no_statss0"
+}

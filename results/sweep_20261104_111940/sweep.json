@@ -1,0 +1,7 @@
+{
+  "F1_full_as_trained": "WoodScape_ICCV19/output/eval_v4_20261104_111942_percFloat",
+  "F4_full_recal_s0": "WoodScape_ICCV19/output/eval_v4_20261104_113007_percFloat_bnRecal1000no_statss0",
+  "F5_full_recal_s1": "WoodScape_ICCV19/output/eval_v4_20261104_113432_percFloat_bnRecal1000no_statss1",
+  "F7_full_recal_all": "WoodScape_ICCV19/output/eval_v4_20261104_113901_percFloat_bnRecal1000alls0",
+  "FA1_full_sender": "WoodScape_ICCV19/output/eval_v4_20261104_114342_percFloat_bnRecal1000no_statss0"
+}

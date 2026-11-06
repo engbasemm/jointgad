@@ -1,0 +1,13 @@
+{
+  "R0_legacy_all": "WoodScape_ICCV19/output/eval_v4_20261104_002410_legacyBN_legacyEmpty_legacyPix",
+  "R1_as_trained_8bit": "WoodScape_ICCV19/output/eval_v4_20261104_003221",
+  "R2_as_trained_float": "WoodScape_ICCV19/output/eval_v4_20261104_004131_percFloat",
+  "R3_perimage_bn_all": "WoodScape_ICCV19/output/eval_v4_20261104_004342_legacyBN_percFloat",
+  "R4_recal_s0": "WoodScape_ICCV19/output/eval_v4_20261104_005231_percFloat_bnRecal1000no_stats",
+  "R5_recal_s1": "WoodScape_ICCV19/output/eval_v4_20261104_010006_percFloat_bnRecal1000no_stats",
+  "R6_recal_s2": "WoodScape_ICCV19/output/eval_v4_20261104_010740_percFloat_bnRecal1000no_stats",
+  "R7_recal_all": "WoodScape_ICCV19/output/eval_v4_20261104_011344_percFloat_bnRecal1000all",
+  "R8_recal_8bit": "WoodScape_ICCV19/output/eval_v4_20261104_012607_bnRecal1000no_stats",
+  "R9_recal_n300": "WoodScape_ICCV19/output/eval_v4_20261104_013355_percFloat_bnRecal300no_stats",
+  "A1_no_reencode": "WoodScape_ICCV19/output/eval_v4_20261104_013812_percFloat_bnRecal1000no_stats"
+}
